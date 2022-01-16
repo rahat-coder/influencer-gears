@@ -1,0 +1,293 @@
+/*Common Typography */
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+h1 {
+  font-size: 35px;
+}
+.half {
+  width: 45%;
+  padding: 15px;
+}
+.btn {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: crimson;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 25px;
+}
+.btn:hover {
+  background-color: rgb(24, 2, 6);
+  transition: 0.3s ease-in-out;
+}
+
+.top img:hover {
+  transform: rotate(360deg) scale(1.4);
+  transition: 1.5s ease-in-out;
+  overflow: hidden;
+}
+.far {
+  color: red;
+}
+
+/* header part */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 75px 0;
+  font-weight: 700;
+}
+header ul li {
+  display: inline;
+  margin-right: 24px;
+}
+.half img {
+  width: 70%;
+}
+
+/* header part-end */
+
+/* top section start */
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 125px;
+  line-height: 35px;
+}
+.main-cam-bg {
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+/* end */
+
+.logos ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* starts */
+.pp-col {
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+.pp-col h1 {
+  text-align: center;
+}
+.pp-col h4 {
+  text-align: right;
+  margin-right: 40px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 50px;
+  padding: 10px;
+  line-height: 1em;
+  margin-bottom: 50px;
+}
+
+.items {
+  background-color: white;
+  width: 85%;
+  padding: 7px;
+  box-shadow: 10px 10px 30px rgb(107, 104, 104);
+}
+.items img {
+  width: 100%;
+}
+.last-str {
+  margin-right: 22px;
+}
+.see {
+  margin-right: 0;
+}
+
+/* secton down */
+.down {
+  display: flex;
+  column-gap: 75px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 150px;
+  margin-bottom: 130px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(6, 6, 37);
+  height: 220px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  padding: 50px 0;
+}
+.foot-logos {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  line-height: 5px;
+}
+
+/* -----------
+ for Tablet
+  ----- */
+
+@media (max-width: 786px) {
+  .c-name {
+    margin: 0 auto;
+    font-size: 25px;
+  }
+  .menu {
+    display: none;
+  }
+  .top {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+  .top img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .half {
+    width: 100%;
+  }
+  .top .text {
+    text-align: center;
+  }
+
+  /* -----
+   second
+   --------- */
+
+  .logos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-right: 30px;
+  }
+  .logos img {
+    width: 100%;
+    padding: 5px;
+  }
+  .main-txt {
+    padding-right: 30px;
+  }
+
+  .pp-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+  .wrapper .items {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .down {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .down img {
+    width: 100%;
+  }
+  .down .text {
+    text-align: center;
+  }
+}
+
+/* ...........
+    Responsive
+   mobile view
+.............. */
+
+@media (max-width: 500px) {
+  .c-name {
+    margin: 0 auto;
+    font-size: 25px;
+  }
+  .menu {
+    display: none;
+  }
+  .top {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+  .top img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .half {
+    width: 100%;
+  }
+  .top .text {
+    text-align: center;
+  }
+
+  /* -----
+   second
+   --------- */
+
+  .logos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-right: 30px;
+  }
+  .logos img {
+    width: 100%;
+    padding: 5px;
+  }
+  .main-txt {
+    padding-right: 30px;
+  }
+
+  .pp-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper .items {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .down {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .down img {
+    width: 100%;
+  }
+  .down .text {
+    text-align: center;
+  }
+}
